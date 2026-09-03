@@ -12,9 +12,9 @@ class starter {
 
 		int count;
 		count = "589";
-		System.out.println("count");
+		System.out.println(count);
 
-		int sum = 0;
+		double sum = 0;
 		double num1 = 12.2;
 		double num2 = 14.3;
 		sum = num1 + num2;

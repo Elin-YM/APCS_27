@@ -7,8 +7,13 @@ import java.util.Scanner;
 
 class starter {
 	public static void main(String args[]) {
-		// the string "I love to learn coding remotely." will appear in
-		// the command window when you compile and run this program.
-		System.out.print("I love to learn coding remotely."); 
+		Scanner sc=new Scanner(System.in);
+		System.out.println("Type in the first number");
+		int x=sc.nextInt();
+		System.out.println("Type in the second number");
+		int y=sc.nextInt();
+		System.out.println("Maximum = " + Math.max(x,y));
+		System.out.println("Square root = " + Math.sqrt(y));
+		System.out.println("Power = " + Math.pow(x,y));
 	}
 }

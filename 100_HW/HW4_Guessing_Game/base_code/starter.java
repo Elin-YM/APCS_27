@@ -19,8 +19,7 @@ class starter {
 			System.out.println("It is a bird");
 			System.out.print("What is your guess? ");
 			String Guess1=sc.nextLine();
-			sc.nextLine();
-			if (Guess1=="Chicken"||Guess1=="chicken")
+			if (Guess1.equals("Chicken")||Guess1.equals("chicken"))
 			{
 				System.out.println("Correct!");
 			}
@@ -30,8 +29,7 @@ class starter {
 				System.out.println("It lays eggs");
 				System.out.print("What is your guess? ");
 				String Guess2=sc.nextLine();
-				sc.nextLine();
-				if (Guess2=="Chicken"||Guess2=="chicken")
+				if (Guess2.equals("Chicken")||Guess2.equals("chicken"))
 				{
 					System.out.println("You got it right!");
 				}
@@ -46,10 +44,9 @@ class starter {
 		{
 			Answer="Potato";
 			System.out.println("It is a root vegtable");
-			System.out.print("What is your guess? ");
+			System.out.println("What is your guess? ");
 			String Guess1=sc.nextLine();
-			sc.nextLine();
-			if (Guess1=="Potato"|| Guess1=="potato")
+			if (Guess1.equals("Potato")|| Guess1.equals("potato"))
 			{
 				System.out.println("Correct!");
 			}
@@ -59,7 +56,7 @@ class starter {
 				System.out.println("It it used for french fries");
 				System.out.print("What is your guess? ");
 				String Guess2=sc.nextLine();
-				if (Guess2=="Potato"|| Guess2=="potato")
+				if (Guess2.equals("Potato")|| Guess2.equals("potato"))
 				{
 					System.out.println("You got it right!");
 				}
@@ -76,8 +73,7 @@ class starter {
 			System.out.println("It is a food with toppings");
 			System.out.print("What is your guess? ");
 			String Guess1=sc.nextLine();
-			sc.nextLine();
-			if (Guess1.equals"Pizza"|| Guess.equals"pizza")
+			if (Guess1.equals("Pizza") || Guess1.equals("pizza"))
 			{
 				System.out.println("Correct!");
 			}
@@ -87,8 +83,7 @@ class starter {
 				System.out.println("It is circular");
 				System.out.print("What is your guess? ");
 				String Guess2=sc.nextLine();
-				sc.nextLine();
-				if (Guess2==Answer|| Guess2=="pizza")
+				if (Guess2.equals(Answer) || Guess2.equals("pizza"))
 				{
 					System.out.println("You got it right!");
 				}

@@ -7,7 +7,7 @@ import java.util.Scanner;
 
 class starter {
 	public static void main(String args[]) {
-		int x=5;
+		int x=7;
 		int y=7;
 		System.out.println("The first variable is: " + x);
 		System.out.println("The second variable is: "+ y);

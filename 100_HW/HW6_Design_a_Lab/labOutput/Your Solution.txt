@@ -1,0 +1,7 @@
+Mad Libs
+Ask the user for 4 nouns
+Ask the user for 3 verbs
+Ask the user for 2 adjectives
+Ask the user for 2 numbers
+Ask the user for 1 place
+Make up a story to include each input and print it out

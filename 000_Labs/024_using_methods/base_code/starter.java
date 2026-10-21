@@ -14,6 +14,70 @@ class starter {
 
 	public static void main(String args[]) throws InterruptedException {
 		// Write your code here!
+		Scanner sc= new Scanner(System.in);
+		System.out.println("Welcome to Type Quest!");
+		System.out.println("It is currently " + getTime() + " and we're ready to play!");
+		System.out.println("Given a sentence, type it as fast as possible!");
+		System.out.println();
+		int Choice=0;
+		while (Choice!=3)
+		{
+			while ((Choice!=1)&&(Choice!=2)&&(Choice!=3))
+			{
+				System.out.println("----------------------------");
+				System.out.println("Would you like to:");
+				System.out.println(" 1 - Play random");
+				System.out.println(" 2 - Play set");
+				System.out.println(" 3 - Quit");
+				System.out.println();
+				Choice=sc.nextInt();
+				sc.nextLine();
+				if (Choice!=1 && Choice!=2 && Choice!=3)
+				{
+					System.out.println("You did not select correctly, please try again.");
+				} 
+			}
+			String Sentence;
+			if (Choice==1)
+			{
+				System.out.println("You've chosen to randomly select a sentence");
+				System.out.println();
+				populateArrayList();
+				Sentence=getSentence();
+			}
+			else if (Choice==2)
+			{
+				System.out.println("Please enter what number sentence you would like to play");
+				int SentenceNum=sc.nextInt();
+				sc.nextLine();
+				populateArrayList();
+				Sentence=getSentence(SentenceNum);
+				
+			}
+			else
+			{
+				break;
+			}
+			
+			System.out.println("--------------Your sentence is:--------------");
+			System.out.println(Sentence);
+			System.out.println("--------------------------------------------");
+			System.out.println();
+			countdown();
+			startTimer();
+			String PlayerSentence=sc.nextLine();
+			double seconds=endTimer();
+
+			System.out.println("Nice job! Here is your result!");
+			System.out.println("Time: " + seconds);
+			System.out.println("Errors: " + compareSentences(Sentence,PlayerSentence) + " / " + lettersInSentence(Sentence) + " letters");
+			System.out.println((lettersInSentence(PlayerSentence)/seconds)*60 + " letters per minute");
+			System.out.println((wordsInSentence(PlayerSentence)/seconds)*60 + " words per minute");
+			Choice=0;
+		}
+			
+
+		
 
 		
 	}

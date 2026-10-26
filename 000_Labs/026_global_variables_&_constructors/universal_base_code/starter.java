@@ -13,9 +13,6 @@ class starter {
 		BankAccount y = new BankAccount("Bob");
 		BankAccount z = new BankAccount("Jeff", 500);
 		BankAccount a = new BankAccount("Fred", 43.2);
-		x.Print();
-		y.Print();
-		z.Print();
 
 		
 	}

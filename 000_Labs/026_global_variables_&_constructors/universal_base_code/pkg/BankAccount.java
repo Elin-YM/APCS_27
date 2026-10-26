@@ -43,10 +43,6 @@ public class BankAccount {
 	}
 	
 
-	// -------METHODS-------
-	public void Print()
-	{
-		System.out.println(Owner + " " + AccountNumber + " " + Balance + " " + isActive);
-	}
+	// -------METHODS------
 
 }

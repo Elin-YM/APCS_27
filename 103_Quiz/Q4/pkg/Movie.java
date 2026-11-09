@@ -61,14 +61,15 @@ public class Movie
     }
     public String revenueToString()
     {
-        int revenue2;
         String revenueString="";
-        revenue2=revenue/1000000;
-        revenueString=revenueString+revenue2+",";
-        revenue2=(revenue/1000)%(revenue2*1000);
-        revenueString=revenueString+revenue2+",";
-        revenue2=(revenue)%(revenue2*100);
-        revenueString=revenueString+revenue2;
+        int rev=revenue;
+       while (revenue!=1000)
+       {
+            int three=rev%1000;
+            revenueString=","+three+revenueString;
+            rev=rev/1000;
+       }
+       revenueString=rev+revenueString;
         
         return revenueString;
     }
